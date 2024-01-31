@@ -1,0 +1,15 @@
+<div  (scroll)="scrollHandler($event)" class="video-list-container">
+  <div (click)="goTo(video.id)" *ngFor="let video of listVideos" class="card video-card border-0">
+    <img src="data:image/jpg;base64, {{video.image}}" class="card-img-top video-thumbnail" alt="Video Thumbnail">
+    <div class="card-body video-details">
+      <h5 class="card-title">{{ video.title }}</h5>
+      <p class="card-text">
+        <i class="fas fa-user"></i> {{ video.channelName }}
+        <span class="dot"></span>
+        <i class="fas fa-eye"></i> {{ video.viewsCount }} views
+        <span class="dot"></span>
+        <i class="far fa-clock"></i> {{ video.uploadDate }}
+      </p>
+    </div>
+  </div>
+</div>

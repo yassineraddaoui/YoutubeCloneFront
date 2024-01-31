@@ -1,0 +1,43 @@
+.video-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.video-card {
+  cursor:pointer;
+  background: transparent;
+  width: 500px;
+  margin: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.video-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+.video-details {
+  padding: 15px;
+}
+
+h5 {
+  margin-top: 0;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Style for FontAwesome icons */
+.fa-user,
+.fa-eye,
+.fa-clock {
+  margin-right: 5px;
+  color: #606060;
+}
