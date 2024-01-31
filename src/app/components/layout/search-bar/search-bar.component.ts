@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {VideosService} from "../../../../services/videos.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-search-bar',
@@ -7,10 +8,9 @@ import {VideosService} from "../../../../services/videos.service";
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent {
-  constructor(private videoService : VideosService) {
+  constructor(private videoService : VideosService,private router: Router) {
   }
-  search(value: string) {
-   this.videoService.searchVideo(value,0)
-     .subscribe((p)=>console.log(p))
+  search(keyword: string) {
+    this.router.navigate(['/search/' + keyword]);
   }
 }

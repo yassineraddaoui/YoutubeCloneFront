@@ -9,6 +9,7 @@ import {AuthInterceptor} from "./AuthInterceptor";
 import { UserComponent } from './components/user/user/user.component';
 import {IndexComponent} from "./components/user/index/index.component";
 import { VideoComponent } from './components/user/video/video.component';
+import { SearchVideoComponent } from './components/user/search-video/search-video.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { VideoComponent } from './components/user/video/video.component';
     SearchBarComponent,
     IndexComponent,
     UserComponent,
-    VideoComponent
+    VideoComponent,
+    SearchVideoComponent
   ],
   imports: [
     BrowserModule,
